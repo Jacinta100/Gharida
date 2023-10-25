@@ -1,0 +1,283 @@
+
+
+:root{
+    --tex-color:c;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Poppins; 
+  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.header{
+    background: var(--dark-background, linear-gradient(240deg, #CB1AE8 -0.37%, #37BDA6 100%));
+}
+
+
+.max-width{
+    width: 100%; 
+    /* max-width:85%; */
+    margin: 0px auto;
+   
+
+}
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo {
+    height:80px;
+    width: 186px;
+    background-image: url(./assert/GharidaMeals.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    list-style: none;
+    margin-right: 31px;
+}
+.nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+.nav-btn  a{
+    text-decoration: none;
+    color: #FFF;
+
+}
+.nav-btn{
+    width: 154px;
+    height: 52Px;
+    padding: 20px 36px;
+    border-radius: 39px;
+    border: 1px solid var(--light-background, #FFF);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+    background-color: #CB1AE8;
+    color: #FFF;
+    margin-right: 5%;
+}
+
+
+.content_wrapper{
+   display:flex ;
+   flex-direction: row;
+   justify-content: center;
+   
+   
+}
+.name{
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 65.5px; /* 119.091% */
+    letter-spacing: 0.2px;
+    margin-top: 118px;
+    text-align: center; 
+    color: #FFF;
+}
+.description{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.2px;
+    text-align : center; 
+    margin-top: 5%;
+    color: #FFF;
+}
+
+
+ .content-image{
+    background-image:url(./assert/0_A-min.jpeg);
+    width:1000px;
+    height: 500px;
+    margin: 5% 0;
+    border-radius: 5px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat; 
+}
+
+@media(max-width:768px){
+    .max-width{
+        max-width:100%;
+}
+.nav {
+    display: none;
+    
+   
+}
+
+.icon-bx_bx-menu-alt-right{
+    background-image: url(./assert/bx_bx-menu-alt-right.png);
+    width: 66px;
+    height: 53px;
+    margin-left: 16px;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right:5% ;
+}
+.name{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 37px;
+    margin-top: 9px;
+}
+.description{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.content-image{
+    width: 364px;
+    height: 224px;
+}
+
+}
+/* End of hero  section */
+.product-section{
+    background-color: #fff;
+}
+.product-section__heading{
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 57px;
+    text-align: center;
+    padding-top: 51px;
+    color: #000;
+}
+.product-section_sample-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5% 5%;
+    justify-content: space-between;
+    
+}
+.product-sample__padding{
+    /* padding: 60px 100px; */
+    color: #000;
+    text-align: center;
+    width: 23%;
+
+ 
+}
+.product-sample__padding img{
+    width: 100%;
+}
+
+@media(max-width: 768px){
+    .product-section_sample-wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+        padding-right: 5%;
+    }
+    .product-sample__padding{
+        padding-top: 15px;
+        width: 100%;
+    }
+}
+/* End of Product section */
+/* About Section */
+.about-section__heading{
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 57px;
+    text-align: center;
+    padding-top: 51px;
+    margin: 0 0 3% 0;
+    color: #000;
+}
+.about-section_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5% ;
+}
+.about-section_content img{
+    width:55% ;
+    height: 600px;
+}
+.about-section_content-writeup{
+    padding: 30px 3% ;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .about-section__heading{
+        font-size: 36px;
+        font-weight: 400; 
+    } 
+    .about-section_content{
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    .about-section_content img{
+        width:100% ;
+        height: 400px;
+    }
+    .about-section_content-writeup{
+        padding: 30px 0;
+    }
+}
+/* End of About section */
+
+.contact-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 30px;
+}
+
+.contact-area_icon {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.contact-area_icon a{
+ text-decoration: none;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:768px) {
+    .footer{
+        font-size: 9px;
+    }
+}
