@@ -26,7 +26,6 @@ body{
 
 .max-width{
     width: 100%; 
-    /* max-width:85%; */
     margin: 0px auto;
    
 
@@ -54,10 +53,15 @@ body{
 .nav li{
     list-style: none;
     margin-right: 31px;
+
 }
+
 .nav a {
     text-decoration: none;
     color: #FFF;
+}
+.nav a:hover {
+    color: #37BDA6;
 }
 .nav-btn  a{
     text-decoration: none;
@@ -138,6 +142,7 @@ body{
     align-items: center;
     text-align: center;
     margin-right:5% ;
+    cursor: pointer;
 }
 .name{
     font-size: 36px;
@@ -253,6 +258,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .icon{
     width: 50px;
